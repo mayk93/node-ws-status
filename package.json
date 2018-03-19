@@ -1,10 +1,11 @@
 {
   "name": "ws-status-lib",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Utility to interact with WS status code in Node.js",
   "main": "lib/index.js",
   "scripts": {
-    "postinstall": "babel -d lib src",
+    "prepublish": "npm run build",
+    "build": "babel -d lib src",
     "test": "jest .",
     "lint": "eslint ."
   },
@@ -17,12 +18,15 @@
   "homepage": "https://github.com/mayk93/node-ws-status#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jest": "^21.14.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "jest": "^22.4.2"
+    "install": "^0.10.4",
+    "jest": "^22.4.2",
+    "npm": "^5.7.1"
   }
 }

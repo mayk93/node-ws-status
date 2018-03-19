@@ -1,13 +1,13 @@
-import lib from '../';
+import { StatusCode, OpCode } from '../src';
 
 describe('node-ws-status', () => {
   it('StatusCode', () => {
-    expect(lib.StatusCode.NORMAL_CLOSURE).toEqual(1000);
-    expect(lib.StatusCode[1000]).toEqual('Normal closure');
+    expect(StatusCode.NORMAL_CLOSURE).toEqual(1000);
+    expect(StatusCode[1000]).toEqual('Normal closure');
   });
 
   it('OpCode', () => {
-    expect(lib.OpCode.CONTINUATION).toEqual(0);
-    expect(lib.OpCode[0]).toEqual('Continuation frame');
+    expect(OpCode.CONTINUATION).toEqual(0);
+    expect(OpCode[0]).toEqual('Continuation frame');
   });
 });
