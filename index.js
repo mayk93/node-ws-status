@@ -1,5 +1,5 @@
-const StatusCode = require('./src/StatusCode');
-const OpCode = require('./src/OpCode');
+import StatusCode from './src/StatusCode';
+import OpCode from './src/OpCode';
 
 export default {
   StatusCode,
